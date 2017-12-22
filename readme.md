@@ -1,8 +1,13 @@
 # Express API Boilerplate
 
-An Express seed application configured to serve GET, POST, PUT and DELETE with Mongoose configuration for a connection to MongoDB.
+An Express seed application configured to serve GET, POST, PUT and DELETE with Mongoose configuration for a connection to a local MongoDB.
 
 This should get you up and running in no time!
+
+Prerequisites:
+
+* MongoDB
+* Node 8.*
 
 ## Stack Specs
 
