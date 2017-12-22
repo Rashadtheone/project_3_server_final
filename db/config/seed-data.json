@@ -1,0 +1,22 @@
+[
+    {
+      "name": "Lebron James",
+      "sport": "Basketball", 
+      "team": "Cleveland Cavaliers"
+    },
+    {
+      "name": "Lionel Messi",
+      "sport": "Soccer", 
+      "team": "Barcelona FC"
+    },
+    {
+      "name": "Tom Brady",
+      "sport": "Football", 
+      "team": "New England Patriots"
+    },
+    {
+      "name": "Alexander Ovechkin", 
+      "sport": "Hockey", 
+      "team": "Washington Capitals"
+    }
+  ]
