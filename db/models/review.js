@@ -20,5 +20,6 @@ const ReviewSchema = new mongoose.Schema({
 // builds a model from the schema, and attaches it to our mongoose instance.
 // a model is used to query and change data in the database
 mongoose.model('Review', ReviewSchema)
+mongoose.model('Comment', CommentSchema)
 
 module.exports = mongoose
