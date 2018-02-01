@@ -1,22 +1,18 @@
 [
     {
-      "name": "Lebron James",
-      "sport": "Basketball", 
-      "team": "Cleveland Cavaliers"
+      "title": "My First Review",
+      "album": "Culture II", 
+      "comments": [
+        {"comment": "This shit bumps!", "author": "Anonymous"}
+      ], 
+      "imageUrl": "http://www.rap-up.com/app/uploads/2018/01/migos-culture-2.jpg"
     },
     {
-      "name": "Lionel Messi",
-      "sport": "Soccer", 
-      "team": "Barcelona FC"
-    },
-    {
-      "name": "Tom Brady",
-      "sport": "Football", 
-      "team": "New England Patriots"
-    },
-    {
-      "name": "Alexander Ovechkin", 
-      "sport": "Hockey", 
-      "team": "Washington Capitals"
+      "title": "My Second Review",
+      "album": "Scary Hours", 
+      "comments": [
+        {"comment": "This shit bumps!", "author": "Anonymous"}
+      ], 
+      "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/e7/d1/ab/e7d1ab4b-bca6-3cf7-da19-9392e79c4d66/UMG_cvrart_00602567420590_01_RGB72_3000x3000_18UMGIM03502.jpg/268x0w.jpg"
     }
   ]

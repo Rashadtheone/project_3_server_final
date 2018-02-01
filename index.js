@@ -4,7 +4,7 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const cors = require('cors')
-const playerController = require('./controllers/players')
+const reviewsController = require('./controllers/reviews')
 
 // define a port
 const PORT = 8080
@@ -21,7 +21,7 @@ app.use(cors())
 
 // test controller reference
 // create your own controller(s)
-app.use('/api/v1/players', playerController)
+app.use('/reviews', reviewsController)
 
 // set listener for PORT
 app.listen(PORT, function() {
