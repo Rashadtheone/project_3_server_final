@@ -7,7 +7,7 @@ const cors = require('cors')
 const reviewsController = require('./controllers/reviews')
 
 // define a port
-const PORT = 8080
+// const PORT = 8080
 
 // create instance of express
 const app = express()
@@ -24,7 +24,13 @@ app.use(cors())
 app.use('/reviews', reviewsController)
 
 // set listener for PORT
-app.listen(PORT, function() {
-    console.log('App started on port ' + PORT)
+// app.listen(PORT, function() {
+//     console.log('App started on port ' + PORT)
+// })
+
+app.set('port', process.env.PORT || 3001)
+
+app.listen(app.get('port'), () => {
+  console.log(`✅ PORT: ${app.get('port')} 🌟`)
 })
 
