@@ -27,7 +27,7 @@ We used Spotify’s API.  We also used Random Name Generator for JavaScript (c) 
 ## Acknowledgements
 We would like to thank Ali Spittel and James Reichard for taking the time to help us think through our process and code. We would also like to thank them for the time they took to help walk us through a few things so we could make our application function like we wanted it to.  
 
-## Express API Boilerplate Installation
+## Installation Instructions
 
 * Clone the repo
 * cd into spawned directory
@@ -36,5 +36,5 @@ We would like to thank Ali Spittel and James Reichard for taking the time to hel
 * Back in the project, seed your database to confirm mongoose connection with `node db/config/db-seed.js`
 * Confirm with a terminal output of 'Your db has been seeded!'
 * Start the project with `node index.js` or `nodemon` (if installed)
-* Open a browser and navigate to: localhost:8080/api/v1/players
-* You should see a players payload!
+* Open a browser and navigate to: localhost:3001/reviews/
+* You should see a reviews payload!
