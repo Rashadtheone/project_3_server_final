@@ -10,7 +10,7 @@ const spotify = new Spotify({
   secret: '360cb210a04e4d97a5378818a5b2f6bf'
 })
 
-// GET ROUTES //
+// GET NEW RELEASES //
 router.get('/new-releases', function (req, res) {
   spotify
     .request('https://api.spotify.com/v1/browse/new-releases')
@@ -19,6 +19,7 @@ router.get('/new-releases', function (req, res) {
     })
 })
 
+// SEARCH FOR ALBUM //
 router.get('/search/:album', function (req, res) {
   spotify
     .search({ type: 'album', query: req.params.album })
@@ -31,6 +32,7 @@ router.get('/search/:album', function (req, res) {
     });
 })
 
+// GET ALBUM DETAILS BY ID //
 router.get('/details/:id', function (req, res) {
   spotify
     .request('https://api.spotify.com/v1/albums/' + req.params.id)
