@@ -1,45 +1,50 @@
-// application imports
-const express = require('express')
-const router = express.Router()
-const mongoose = require('../db/config/db-connection')
+const express   = require('express')
+const mongoose  = require('../db/config/db-connection')
+const router    = express.Router()
+const Review    = mongoose.model('Review')
+const Comment   = mongoose.model('Comment')
 
-// mongoose.model to retrieve the Test [replace with your own] model
-const Review = mongoose.model('Review')
-const Comment = mongoose.model('Comment')
-
-// GET ROUTES //
+// get all reviews
 router.get('/', function (req, res) {
     Review
         .find({})
         .then(function (data) {
             res.json(data)
         })
+        .catch(function (err) {
+            console.log(err)
+        })
 })
 
+// get review by id
 router.get('/:_id', function (req, res) {
     Review
         .findOne({ _id: req.params._id })
         .then(function (data) {
             res.json(data)
         })
+        .catch(function (err) {
+            console.log(err)
+        })
 })
 
-// POST ROUTES //
+// create new review
 router.post('/', function (req, res) {
     Review
         .create(req.body)
         .then(function (data) {
             res.json(data)
         })
+        .catch(function (err) {
+            console.log(err)
+        })
 })
 
-// route for adding comments
+// create new comment
 router.post('/add-comments/:_id/', function (req, res) {
     Review
         .findOne({ _id: req.params._id })
         .then(function (review) {
-            console.log(review)
-            // create new comment
             comment = new Comment(req.body)
             review.comments.push(comment)
             review.save()
@@ -47,25 +52,33 @@ router.post('/add-comments/:_id/', function (req, res) {
                     res.json(data)
                 })
         })
+        .catch(function (err) {
+            console.log(err)
+        })
 })
 
-// PUT ROUTES //
+// update review
 router.put('/:_id', function (req, res) {
     Review
         .findOneAndUpdate({ _id: req.params._id }, req.body)
         .then(function (data) {
             res.json(data)
         })
+        .catch(function (err) {
+            console.log(err)
+        })
 })
 
-// DELETE ROUTES //
+// delete review
 router.delete('/:_id', function (req, res) {
     Review
         .findOneAndRemove({ _id: req.params._id }, req.body)
         .then(function (data) {
             res.json(data)
         })
+        .catch(function (err) {
+            console.log(err)
+        })
 })
 
-// export router
 module.exports = router

@@ -1,36 +1,24 @@
-// 'MAIN' CONFIGURATION FILE //
-
-// application imports
-const express = require('express')
-const bodyParser = require('body-parser')
-const cors = require('cors')
+const express           = require('express')
+const bodyParser        = require('body-parser')
+const cors              = require('cors')
 const reviewsController = require('./controllers/reviews')
-const albumsController = require('./controllers/albums')
-
-// define a port
-// const PORT = 8080
+const albumsController  = require('./controllers/albums')
 
 // create instance of express
 const app = express()
 
-// generic body-parser configuration
+// body-parser config
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: true}))
 
-// generic cors configuration
+// cors config
 app.use(cors())
 
-// test controller reference
-// create your own controller(s)
+// controllers
 app.use('/reviews', reviewsController)
 app.use('/albums', albumsController)
 
-
-// set listener for PORT
-// app.listen(PORT, function() {
-//     console.log('App started on port ' + PORT)
-// })
-
+// port config
 app.set('port', process.env.PORT || 3001)
 
 app.listen(app.get('port'), () => {

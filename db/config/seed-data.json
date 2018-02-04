@@ -1,24 +1,30 @@
 [
-    {
-      "reviewTitle": "My First Review",
-      "albumTitle": "Culture II", 
-      "reviewBody": "",
-      "comments": [
-        {"comment": "This shit bumps!", "author": "Anonymous"}
-      ], 
-      "imageUrl": "http://www.rap-up.com/app/uploads/2018/01/migos-culture-2.jpg",
-      "rating": "",
-      "votes": 0
-    },
-    {
-      "reviewTitle": "My Second Review",
-      "albumTitle": "Scary Hours",
-      "reviewBody": "",
-      "comments": [
-        {"comment": "This shit bumps!", "author": "Anonymous"}
-      ], 
-      "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/e7/d1/ab/e7d1ab4b-bca6-3cf7-da19-9392e79c4d66/UMG_cvrart_00602567420590_01_RGB72_3000x3000_18UMGIM03502.jpg/268x0w.jpg",
-      "rating": "",
-      "votes": 0
-    }
-  ]
+  {
+    "reviewTitle": "My First Review",
+    "albumTitle": "Culture II",
+    "reviewBody": "",
+    "comments": [
+      {
+        "comment": "This shit bumps!",
+        "author": "Anonymous"
+      }
+    ],
+    "imageUrl": "http://www.rap-up.com/app/uploads/2018/01/migos-culture-2.jpg",
+    "rating": "",
+    "votes": 0
+  },
+  {
+    "reviewTitle": "My Second Review",
+    "albumTitle": "Scary Hours",
+    "reviewBody": "",
+    "comments": [
+      {
+        "comment": "This shit bumps!",
+        "author": "Anonymous"
+      }
+    ],
+    "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/e7/d1/ab/e7d1ab4b-bca6-3cf7-da19-9392e79c4d66/UMG_cvrart_00602567420590_01_RGB72_3000x3000_18UMGIM03502.jpg/268x0w.jpg",
+    "rating": "",
+    "votes": 0
+  }
+]
