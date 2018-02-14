@@ -14,6 +14,9 @@ app.use(bodyParser.urlencoded({extended: true}))
 // cors config
 app.use(cors())
 
+//User Auth 
+
+
 // controllers
 app.use('/reviews', reviewsController)
 app.use('/albums', albumsController)
