@@ -7,7 +7,7 @@ const router    = express.Router()
 // EXPORT TO ENV VARIABLE
 const spotify = new Spotify({
   id: '058ba811504e418d8b67bbc6ed8a0707',
-  secret: ''
+  secret: '360cb210a04e4d97a5378818a5b2f6bf'
 })
 
 // get latest releases
